@@ -1,0 +1,25 @@
+ package com.demo.agenda;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.demo.agenda.database.RepositorioContato;
+import com.demo.agenda.entidade.Contato;
+
+public class ContatoRest {
+	//objeto responsável por manipular os contatos
+	@Autowired
+	private RepositorioContato repositorio;
+	
+	public List<Contato>listar(){
+		return repositorio.findAll();
+	}
+	public void salvar (Contato contato) {
+		return repositorio.save(contato);
+	}
+	public void alterar (Contato contato) {
+		if(contato.getId()>0) {
+			
+			return repositorio.save(contato);
+		}
+	}
+}

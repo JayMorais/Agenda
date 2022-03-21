@@ -1,0 +1,5 @@
+package com.demo.agenda.entidade;
+
+public class Contato {
+
+}

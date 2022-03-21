@@ -1,0 +1,5 @@
+package com.demo.agenda.database;
+
+public class RepositorioContato {
+
+}
