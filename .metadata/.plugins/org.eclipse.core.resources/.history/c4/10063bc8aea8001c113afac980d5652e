@@ -1,7 +1,0 @@
-package com.demo.agenda.database;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface RepositorioContato extends JpaRepository<Contato, Long> {
-
-}
